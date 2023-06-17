@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HotelDataSet1" targetNamespace="http://tempuri.org/HotelDataSet1.xsd" xmlns:mstns="http://tempuri.org/HotelDataSet1.xsd" xmlns="http://tempuri.org/HotelDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HotelConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HotelConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.HotelConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Бронь номеровTableAdapter" GeneratorDataComponentClassName="Бронь_номеровTableAdapter" Name="Бронь номеров" UserDataComponentName="Бронь номеровTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelConnectionString (Settings)" DbObjectName="Hotel.dbo.[Бронь номеров]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [ФИО клиента], [Дата рождения], Телефон, Паспорт, Номер, [Дата прибытия], [Дата отбытия] FROM dbo.[Бронь номеров]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ФИО клиента" DataSetColumn="ФИО клиента" />
+              <Mapping SourceColumn="Дата рождения" DataSetColumn="Дата рождения" />
+              <Mapping SourceColumn="Телефон" DataSetColumn="Телефон" />
+              <Mapping SourceColumn="Паспорт" DataSetColumn="Паспорт" />
+              <Mapping SourceColumn="Номер" DataSetColumn="Номер" />
+              <Mapping SourceColumn="Дата прибытия" DataSetColumn="Дата прибытия" />
+              <Mapping SourceColumn="Дата отбытия" DataSetColumn="Дата отбытия" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Номера с клиентамиTableAdapter" GeneratorDataComponentClassName="Номера_с_клиентамиTableAdapter" Name="Номера с клиентами" UserDataComponentName="Номера с клиентамиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelConnectionString (Settings)" DbObjectName="Hotel.dbo.[Номера с клиентами]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Номер, [Вид номера], ФИО, Телефон, [Дата прибытия], [Дата отбытия] FROM dbo.[Номера с клиентами]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер" DataSetColumn="Номер" />
+              <Mapping SourceColumn="Вид номера" DataSetColumn="Вид номера" />
+              <Mapping SourceColumn="ФИО" DataSetColumn="ФИО" />
+              <Mapping SourceColumn="Телефон" DataSetColumn="Телефон" />
+              <Mapping SourceColumn="Дата прибытия" DataSetColumn="Дата прибытия" />
+              <Mapping SourceColumn="Дата отбытия" DataSetColumn="Дата отбытия" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Оказанные услугиTableAdapter" GeneratorDataComponentClassName="Оказанные_услугиTableAdapter" Name="Оказанные услуги" UserDataComponentName="Оказанные услугиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HotelConnectionString (Settings)" DbObjectName="Hotel.dbo.[Оказанные услуги]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Код сотрудника], [ФИО сотрудника], [Код клиента], [ФИО клиента], [Код услуги], Наименование, Стоимость FROM dbo.[Оказанные услуги]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код сотрудника" DataSetColumn="Код сотрудника" />
+              <Mapping SourceColumn="ФИО сотрудника" DataSetColumn="ФИО сотрудника" />
+              <Mapping SourceColumn="Код клиента" DataSetColumn="Код клиента" />
+              <Mapping SourceColumn="ФИО клиента" DataSetColumn="ФИО клиента" />
+              <Mapping SourceColumn="Код услуги" DataSetColumn="Код услуги" />
+              <Mapping SourceColumn="Наименование" DataSetColumn="Наименование" />
+              <Mapping SourceColumn="Стоимость" DataSetColumn="Стоимость" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HotelDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="HotelDataSet1" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HotelDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Бронь_x0020_номеров" msprop:Generator_RowEvHandlerName="Бронь_номеровRowChangeEventHandler" msprop:Generator_RowDeletedName="Бронь_номеровRowDeleted" msprop:Generator_RowDeletingName="Бронь_номеровRowDeleting" msprop:Generator_RowEvArgName="Бронь_номеровRowChangeEvent" msprop:Generator_TablePropName="Бронь_номеров" msprop:Generator_RowChangedName="Бронь_номеровRowChanged" msprop:Generator_RowChangingName="Бронь_номеровRowChanging" msprop:Generator_TableClassName="Бронь_номеровDataTable" msprop:Generator_RowClassName="Бронь_номеровRow" msprop:Generator_TableVarName="tableБронь_номеров" msprop:Generator_UserTableName="Бронь номеров">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ФИО_x0020_клиента" msprop:Generator_ColumnPropNameInRow="ФИО_клиента" msprop:Generator_ColumnPropNameInTable="ФИО_клиентаColumn" msprop:Generator_ColumnVarNameInTable="columnФИО_клиента" msprop:Generator_UserColumnName="ФИО клиента">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_x0020_рождения" msprop:Generator_ColumnPropNameInRow="Дата_рождения" msprop:Generator_ColumnPropNameInTable="Дата_рожденияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_рождения" msprop:Generator_UserColumnName="Дата рождения" type="xs:dateTime" />
+              <xs:element name="Телефон" msprop:Generator_ColumnPropNameInRow="Телефон" msprop:Generator_ColumnPropNameInTable="ТелефонColumn" msprop:Generator_ColumnVarNameInTable="columnТелефон" msprop:Generator_UserColumnName="Телефон">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт" msprop:Generator_ColumnPropNameInRow="Паспорт" msprop:Generator_ColumnPropNameInTable="ПаспортColumn" msprop:Generator_ColumnVarNameInTable="columnПаспорт" msprop:Generator_UserColumnName="Паспорт" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер" msprop:Generator_ColumnPropNameInRow="Номер" msprop:Generator_ColumnPropNameInTable="НомерColumn" msprop:Generator_ColumnVarNameInTable="columnНомер" msprop:Generator_UserColumnName="Номер" type="xs:int" />
+              <xs:element name="Дата_x0020_прибытия" msprop:Generator_ColumnPropNameInRow="Дата_прибытия" msprop:Generator_ColumnPropNameInTable="Дата_прибытияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_прибытия" msprop:Generator_UserColumnName="Дата прибытия" type="xs:dateTime" />
+              <xs:element name="Дата_x0020_отбытия" msprop:Generator_ColumnPropNameInRow="Дата_отбытия" msprop:Generator_ColumnPropNameInTable="Дата_отбытияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_отбытия" msprop:Generator_UserColumnName="Дата отбытия" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Номера_x0020_с_x0020_клиентами" msprop:Generator_RowEvHandlerName="Номера_с_клиентамиRowChangeEventHandler" msprop:Generator_RowDeletedName="Номера_с_клиентамиRowDeleted" msprop:Generator_RowDeletingName="Номера_с_клиентамиRowDeleting" msprop:Generator_RowEvArgName="Номера_с_клиентамиRowChangeEvent" msprop:Generator_TablePropName="Номера_с_клиентами" msprop:Generator_RowChangedName="Номера_с_клиентамиRowChanged" msprop:Generator_RowChangingName="Номера_с_клиентамиRowChanging" msprop:Generator_TableClassName="Номера_с_клиентамиDataTable" msprop:Generator_RowClassName="Номера_с_клиентамиRow" msprop:Generator_TableVarName="tableНомера_с_клиентами" msprop:Generator_UserTableName="Номера с клиентами">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер" msprop:Generator_ColumnPropNameInRow="Номер" msprop:Generator_ColumnPropNameInTable="НомерColumn" msprop:Generator_ColumnVarNameInTable="columnНомер" msprop:Generator_UserColumnName="Номер" type="xs:int" />
+              <xs:element name="Вид_x0020_номера" msprop:Generator_ColumnPropNameInRow="Вид_номера" msprop:Generator_ColumnPropNameInTable="Вид_номераColumn" msprop:Generator_ColumnVarNameInTable="columnВид_номера" msprop:Generator_UserColumnName="Вид номера">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_UserColumnName="ФИО">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон" msprop:Generator_ColumnPropNameInRow="Телефон" msprop:Generator_ColumnPropNameInTable="ТелефонColumn" msprop:Generator_ColumnVarNameInTable="columnТелефон" msprop:Generator_UserColumnName="Телефон">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_x0020_прибытия" msprop:Generator_ColumnPropNameInRow="Дата_прибытия" msprop:Generator_ColumnPropNameInTable="Дата_прибытияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_прибытия" msprop:Generator_UserColumnName="Дата прибытия" type="xs:dateTime" />
+              <xs:element name="Дата_x0020_отбытия" msprop:Generator_ColumnPropNameInRow="Дата_отбытия" msprop:Generator_ColumnPropNameInTable="Дата_отбытияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_отбытия" msprop:Generator_UserColumnName="Дата отбытия" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Оказанные_x0020_услуги" msprop:Generator_RowEvHandlerName="Оказанные_услугиRowChangeEventHandler" msprop:Generator_RowDeletedName="Оказанные_услугиRowDeleted" msprop:Generator_RowDeletingName="Оказанные_услугиRowDeleting" msprop:Generator_RowEvArgName="Оказанные_услугиRowChangeEvent" msprop:Generator_TablePropName="Оказанные_услуги" msprop:Generator_RowChangedName="Оказанные_услугиRowChanged" msprop:Generator_RowChangingName="Оказанные_услугиRowChanging" msprop:Generator_TableClassName="Оказанные_услугиDataTable" msprop:Generator_RowClassName="Оказанные_услугиRow" msprop:Generator_TableVarName="tableОказанные_услуги" msprop:Generator_UserTableName="Оказанные услуги">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_x0020_сотрудника" msprop:Generator_ColumnPropNameInRow="Код_сотрудника" msprop:Generator_ColumnPropNameInTable="Код_сотрудникаColumn" msprop:Generator_ColumnVarNameInTable="columnКод_сотрудника" msprop:Generator_UserColumnName="Код сотрудника" type="xs:int" />
+              <xs:element name="ФИО_x0020_сотрудника" msprop:Generator_ColumnPropNameInRow="ФИО_сотрудника" msprop:Generator_ColumnPropNameInTable="ФИО_сотрудникаColumn" msprop:Generator_ColumnVarNameInTable="columnФИО_сотрудника" msprop:Generator_UserColumnName="ФИО сотрудника">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код_x0020_клиента" msprop:Generator_ColumnPropNameInRow="Код_клиента" msprop:Generator_ColumnPropNameInTable="Код_клиентаColumn" msprop:Generator_ColumnVarNameInTable="columnКод_клиента" msprop:Generator_UserColumnName="Код клиента" type="xs:int" />
+              <xs:element name="ФИО_x0020_клиента" msprop:Generator_ColumnPropNameInRow="ФИО_клиента" msprop:Generator_ColumnPropNameInTable="ФИО_клиентаColumn" msprop:Generator_ColumnVarNameInTable="columnФИО_клиента" msprop:Generator_UserColumnName="ФИО клиента">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код_x0020_услуги" msprop:Generator_ColumnPropNameInRow="Код_услуги" msprop:Generator_ColumnPropNameInTable="Код_услугиColumn" msprop:Generator_ColumnVarNameInTable="columnКод_услуги" msprop:Generator_UserColumnName="Код услуги" type="xs:int" />
+              <xs:element name="Наименование" msprop:Generator_ColumnPropNameInRow="Наименование" msprop:Generator_ColumnPropNameInTable="НаименованиеColumn" msprop:Generator_ColumnVarNameInTable="columnНаименование" msprop:Generator_UserColumnName="Наименование">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Стоимость" msprop:Generator_ColumnPropNameInRow="Стоимость" msprop:Generator_ColumnPropNameInTable="СтоимостьColumn" msprop:Generator_ColumnVarNameInTable="columnСтоимость" msprop:Generator_UserColumnName="Стоимость" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Номера_x0020_с_x0020_клиентами" />
+      <xs:field xpath="mstns:Номер" />
+    </xs:unique>
+    <xs:unique name="Оказанные_x0020_услуги_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Оказанные_x0020_услуги" />
+      <xs:field xpath="mstns:Код_x0020_услуги" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

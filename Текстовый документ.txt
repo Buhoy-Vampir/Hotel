@@ -1,0 +1,7 @@
+admin	password1	admin	1	Маркова Александра Игоревна	+79335146015	pierre.schowalter@yahoo.com	
+Fratildronda	nUSvlt4tH	employee	2	Дьяконов Леонид Артёмович	+79814468625   	johnson.era@yahoo.com	
+Hebaseema	l_FowT9Zbb	admin	3	Авдеев Егор Артёмович	+79056493765	kaela83@hotmail.com	
+Herbyaakodan	0l_nst4QuW	Ожидает подтверждения	4	Семенова Алиса Глебовна	+79954221629	londricka@gmail.com	
+Thorenceleil	qw9IA7VD_c	cleaner	5	Свешникова Виктория Петровна	+79502442682	norma.schultz@hotmail.com	
+Anaghenry	_fO6cObVRv	cleaner	6	Софронова Варвара Егоровна	+79584127017	nickolas.heathcote@gmail.com	
+Hyackinsl	AolA0e10Y	manager	7	Зайцев Александр Михайлович	+79471876361	eldon.fay@yahoo.com	
